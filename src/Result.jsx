@@ -1,7 +1,7 @@
 import question from "./questions.js";
 export default function Result({ score }) {
   let style = {
-    color: "#1e90ff",
+    color: "#1c8cfdff",
     textAlign: "center",
     margin: "0",
   };
