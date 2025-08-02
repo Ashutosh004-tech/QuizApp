@@ -8,7 +8,7 @@
     border-radius: 10px;
 }
 .question{
-    color: red;
+    color: rgb(237, 2, 2);
     margin: 0;
 }
 .ansInput{
@@ -40,6 +40,6 @@
     transition:  .5s;
 }
 .submitBtn:hover{
-    background-color: rgb(2, 25, 27);
-    color:#0cb
+    background-color: rgb(3, 65, 71);
+    color:rgb(6, 204, 188)
 }
