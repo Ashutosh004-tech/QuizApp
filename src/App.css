@@ -1,4 +1,49 @@
-body{
-    margin: 0;
-    padding: 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav-logo {
+  color: #0cdaf0;
+  margin: 0 0 0 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* Theme styles for body */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #dee2e6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid currentColor;
+}
+
+
+
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Content */
+.main-content {
+  padding: 2rem;
+}

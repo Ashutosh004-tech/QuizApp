@@ -1,7 +1,7 @@
 import { useState } from "react";
 import question from "./questions.js";
 import Result from "./Result.jsx";
-import "./Quiz.css"
+import "./Quiz.css";
 export default function QuizQuestion() {
   const [crnIdx, setCrnIdx] = useState(0);
   const [ans, setAns] = useState("");
@@ -29,6 +29,7 @@ export default function QuizQuestion() {
   }
   return (
     <>
+      <h1 className="text-center mt-5 mb-3">Question Bank</h1>
       <div className="container">
         <h1 className="question">{question[crnIdx].q}</h1>
         <ul style={{ listStyleType: "lower-alpha" }}>
@@ -38,17 +39,19 @@ export default function QuizQuestion() {
           <li>{question[crnIdx].option.d}</li>
         </ul>
         <form onSubmit={handleOnclick} className="ansForm">
-        <input 
-          type="text"
-          placeholder="Enter You'r Answer (e.g. a, b, b & d). . . . . . . ."
-          onChange={handleChange}
-          value={ans}
-          required
-          className="ansInput"
-        />
-        <button type="submit" className="submitBtn">Next</button>
-      </form>
-      </div> 
+          <input
+            type="text"
+            placeholder="Enter You'r Answer (e.g. a, b, b & d). . . . . . . ."
+            onChange={handleChange}
+            value={ans}
+            required
+            className="ansInput form-control "
+          />
+          <button type="submit" className="submitBtn btn btn-outline-primary ">
+            Next
+          </button>
+        </form>
+      </div>
     </>
   );
 }

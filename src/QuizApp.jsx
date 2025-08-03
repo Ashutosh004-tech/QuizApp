@@ -1,9 +1,11 @@
 import QuizQuestion from "./QuizQuestion";
-import QuizGame from "./QuizGame";
+import Navbar from "./Navbar"
+
 export default function QuizApp() {
   return (
     <>
-      <QuizGame />
+
+      <Navbar/>
       <QuizQuestion />
     </>
   );
